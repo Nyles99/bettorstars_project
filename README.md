@@ -8,11 +8,14 @@
 Активировать его:
 2. source venv/bin/activate
 
+Обновить виртуальное окружение:
+3. python -m pip install --upgrade pip
+
 Установить зависимости из файла requirements.txt:
-3. pip install -r requirements.txt
+4. pip install -r requirements.txt
 
 Выполнить миграции:
-4. python manage.py migrate
+5. python manage.py migrate
 
 Запустить проект:
-5. python manage.py runserver
+6. python manage.py runserver
