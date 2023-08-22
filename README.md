@@ -6,7 +6,7 @@
 1. python -m venv venv
 
 Активировать его:
-2. source venv/bin/activate
+2. source venv/scripts/activate
 
 Обновить виртуальное окружение:
 3. python -m pip install --upgrade pip
