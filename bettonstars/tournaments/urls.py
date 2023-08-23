@@ -10,5 +10,5 @@ urlpatterns = [
     # Страница со списком туриниров
     path('tournaments_list', views.tournaments_list, name='tournaments_list'),
     # Отдельная страница с информацией о конкретном турнире
-    path('tournaments/<int:pk>/', views.tournaments_detail),
+    path('tournaments/<int:pk>/', views.tournaments_detail, name='tournaments_detail'),
 ]

@@ -36,4 +36,13 @@ def tournaments_list(request):
 # Страница с информацией об одном турнире;
 # view-функция принимает параметр pk из path()
 def tournaments_detail(request, pk):
-    return HttpResponse(f'Турнир номер {pk}')
+    template = 'tournaments/tournaments_detail.html'
+    title = 'Турнир'
+    context = {
+        # В словарь можно передать переменную
+        'title': title,
+        # А можно сразу записать значение в словарь. Но обычно так не делают
+        'text': f'Турнир номер {pk}',
+    }
+    # Третьим параметром передаём словарь context
+    return render(request, template, context)
