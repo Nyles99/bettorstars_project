@@ -1,5 +1,6 @@
 <!-- templates/tournaments/index.html --> 
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
   <h1>{{ text }}</h1>
   <a href="{% url 'tournaments:tournaments_list' %}">>все турниры</a>
